@@ -1,3 +1,131 @@
+.hidden {
+  display: none;
+}
 
+* {
+  border: none;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-family: "arial", "helvetica", sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+main h1 {
+  padding-bottom: 1rem;
+}
+main h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+}
+main hr {
+  width: 80%;
+  border: 1px solid black;
+  margin: 40px 0;
+}
+main p {
+  max-width: 75%;
+}
+
+header img {
+  width: 130px;
+}
+
+.err {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  height: 100vh;
+}
+.err h2 {
+  font-size: 40px;
+  padding: 10px;
+}
+.err img {
+  padding-top: 1rem;
+  width: 150px;
+}
+
+.errbutton {
+  padding: 10px 20px;
+  margin: 40px;
+  border: none;
+  font-size: 18px;
+  display: inline-block;
+  border: white 1px solid;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  background: none;
+}
+.errbutton:hover {
+  background-color: gray;
+  border: none;
+  color: white;
+}
+.errbutton a:link, .errbutton a:visited {
+  color: white;
+  text-decoration: none;
+}
+.errbutton a:link:hover, .errbutton a:visited:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .fav-section {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .container {
+    width: 600px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .fav-section {
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

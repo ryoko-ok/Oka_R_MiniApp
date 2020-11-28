@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+    .fav-section {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+        }
+    
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 600px;
+    }    
+
+    p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .fav-section {
+        flex-wrap: wrap;
+        }
+
+    h1 {
+        font-size: 60px;
+        line-height: 70px;
+        }
+    
+    h2 {
+        font-size: 55px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+}
