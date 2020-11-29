@@ -1,3 +1,5 @@
+// ------------- ipad size ----------------
+
 @media (min-width: 768px) {
     .fav-section {
         display: flex;
@@ -6,16 +8,20 @@
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 2.5rem;
         line-height: 60px;
         }
     
     h2 {
-        font-size: 45px;
+        font-size: 2rem;
     }
 
     h3 {
-        font-size: 24px;
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.2rem;
     }
 
     .container {
@@ -23,10 +29,18 @@
     }    
 
     p {
-        font-size: 20px;
+        font-size: 1.3em;
         line-height: 25px;
     }
+
+    header {
+        img {
+            width: 8rem;
+        }
+    }
 }
+
+// ------------- desktop size ----------------
 
 @media (min-width: 1024px) {
     .fav-section {
@@ -34,17 +48,22 @@
         }
 
     h1 {
-        font-size: 60px;
+        font-size: 2.8rem;
         line-height: 70px;
         }
     
     h2 {
-        font-size: 55px;
+        font-size: 2.3rem;
     }
 
     p {
-        font-size: 22px;
+        font-size: 1.4rem;
         line-height: 28px;
     }
-
+    header {
+        img {
+            width: 10rem;
+        }
+    }
 }
+
