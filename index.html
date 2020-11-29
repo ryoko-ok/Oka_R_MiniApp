@@ -16,23 +16,42 @@
     </header> 
 
     <main>
-        <h2>h2 This is Mini Cooper's New model site!</h2>
-        <div class="maincontainer"></div>
-        <p>p this is the text size</p>
+        <div id="maincontainer">
+            <h2>h2 This is Mini Cooper's New model site!</h2>
+            <p>p this is the text size</p>
 
+            <!-- Video container -->
+            <section id="videoCon">
+                <video class="mainvideo" id="movie" src="video/3Door.mp4" controls muted autoplay></video>
+
+                <div class="playlist">
+                    <video poster="images/3door_video_pic.png" onclick="playVideo(1)"></video>
+                    <video poster="images/convertible_video_pic.png" onclick="playVideo(2)"></video>
+                    <video poster="images/countryman_video_pic.png" onclick="playVideo(3)"></video>
+                </div>
+            </section>
+        </div>
     </main>
-        <!-- Slideshow container -->
-        <div class="slideshow">
-            <!-- Full-width images -->
-            <div class="mySlides fade">
-            <img src="images/3Door.mp4" alt="Mini Cooper 3Door">
-            </div>
-            <div class="mySlides fade">
-            <img src="images/clorox_cleaner_main.jpg" style="width:100%" alt="Cleaner image">
-            </div>
-            <div class="mySlides fade">
-            <img src="images/clorox_wipes_main.jpg" style="width:100%" alt="Wipes image">
-            </div>
+
+    <script>
+
+    function playVideo(num) {
+        console.log(num);
+        tag = document.getElementById("movie");
+        switch (num) {
+            case 1:
+                tag.src = "./video/3Door.mp4";
+                break;
+            case 2:
+                tag.src = "./video/Convertible.mp4";
+                break;
+            case 3:
+                tag.src = "./video/Countryman.mp4";
+                break;
+        }
+    }
+    </script>
+    
 
     <script src="js/main.js" type="module"></script>
 </body>
