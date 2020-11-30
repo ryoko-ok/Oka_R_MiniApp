@@ -13,7 +13,7 @@ Three new model pictures on the top. Click the picture, you will see more pictur
 ## Contributing
 
 1. Create base functions and artwork
-2. 
+2. Add Video section (with clickable pictures)
 3. 
 4. 
 5. 
