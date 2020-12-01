@@ -14,7 +14,7 @@ Three new model pictures on the top. Click the picture, you will see more pictur
 
 1. Create base functions and artwork
 2. Add Video section (with clickable pictures)
-3. 
+3. Adding Ajax 
 4. 
 5. 
 

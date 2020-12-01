@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini App</title>
-
+    <title>Mini Cooper New Models</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <img src="images/mini-logo.jpg" alt="Mini Cooper mini-logo">
-        <h1>h1 Mini App</h1>
-        <div id="app"></div>
+        <img src="images/mini-logo-3d.png" alt="Mini Cooper mini-logo">
+        <h1 class="hidden">h1 Mini App</h1>
     </header> 
 
-    <main>
+    <main id="app">
         <div id="maincontainer">
-            <h2>h2 This is Mini Cooper's New model site!</h2>
-            <p>p this is the text size</p>
-
             <!-- Video container -->
             <section id="videoCon">
                 <video class="mainvideo" id="movie" src="video/3Door.mp4" controls muted autoplay></video>
@@ -30,11 +26,37 @@
                     <video poster="images/countryman_video_pic.png" onclick="playVideo(3)"></video>
                 </div>
             </section>
-        </div>
+
+            <!-- Car Section -->
+            <div class="carmodelCon">
+        
+                <!-- show the model data in 'collection' array -->
+                <div>
+                    <h1 @click="clickHeader">{{ message }}</h1><!-- linked with main.js data -->
+                    <p>{{ anotherMessage }}</p>    
+                    <ul class="carmodels">
+                        <li v-for= "model in newmodels"> <!-- this 'collection' means main.js 'data'-'collection' -->
+                            <img :src="'images/' + model.pic" :alt='model.name + " image"' @click.prevent="removeModel(model)"> <!-- :href="" -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- show more section -->
+                <div class="carinfo">
+                <section class="bio-data" :class="{'show-bio' : showBioData}">
+                    <h3>{{ currentModelData.name }}</h3>
+                    <p> {{ currentModelData.price }}</p>
+                    <p> {{ currentModelData.info }}</p>
+                </section>
+                </div>
+            </div>
+
+        </div><!-- end of maincontainer -->
+        <section><p>test
+        </p></section>
     </main>
 
+    <!-- video script-->
     <script>
-
     function playVideo(num) {
         console.log(num);
         tag = document.getElementById("movie");
@@ -51,7 +73,6 @@
         }
     }
     </script>
-    
 
     <script src="js/main.js" type="module"></script>
 </body>
